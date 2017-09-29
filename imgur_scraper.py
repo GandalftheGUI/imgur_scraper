@@ -35,10 +35,10 @@ try:
   post_image_elements = browser.find_elements_by_class_name("post-image-container")
   actions = ActionChains(browser)
 
-  print('Found {}'.format(len(post_image_elements.length))
+  print('Found {}'.format(len(post_image_elements)))
 
   for element in post_image_elements:
-    print('Moving to post-image with id: {}'.format(element.getAttribute("id")))
+    print('Moving to post-image with id: {}'.format(element.get_attribute("id")))
     actions.move_to_element(element).perform()
 
 except NoSuchElementException:
