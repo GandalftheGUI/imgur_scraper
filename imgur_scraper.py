@@ -19,7 +19,7 @@ try:
   image_address_hash = {}
   last_element_id = ""
   
-  #imgur wont load all images when you load the page just the ~5 closes to your viewing area
+  #imgur wont load all images when you load the page just the ~5 closest to your viewing area
   #we scroll to the last one repeatedly to keep the images loading
   while True: #python doesnt have a do..while loop?
     post_image_elements = driver.find_elements_by_class_name("post-image-container")
