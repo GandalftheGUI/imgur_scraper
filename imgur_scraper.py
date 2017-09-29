@@ -21,7 +21,7 @@ try:
   
   #imgur wont load all images when you load the page just the ~5 closes to your viewing area
   #we scroll to the last one repeatedly to keep the images loading
-  while True:
+  while True: #python doesnt have a do..while loop?
     post_image_elements = driver.find_elements_by_class_name("post-image-container")
 
     for element in post_image_elements:
