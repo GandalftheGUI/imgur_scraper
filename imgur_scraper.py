@@ -40,6 +40,7 @@ try:
     last_element = post_image_elements[-1]
     new_last_element_id = last_element.get_attribute("id")
 
+    #scroll down to last displayed image
     print('Moving to post-image with id: {}'.format(last_element_id))
     driver.execute_script("arguments[0].scrollIntoView();", last_element)
     time.sleep(0.5)
